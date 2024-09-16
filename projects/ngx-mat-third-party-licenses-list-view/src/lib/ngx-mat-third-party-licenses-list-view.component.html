@@ -1,0 +1,43 @@
+<div id="container">
+  @for (license of licenses; track license.name) {
+    @defer {
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          {{ license.name }}
+        </mat-expansion-panel-header>
+        @if (license.description) {
+          <p>{{ license.description }}</p>
+          <br />
+        }
+        @if (license.website) {
+          <p>Website</p>
+          <p>
+            <a href="{{ license.website }}" target="_blank" rel="noopner noreferrer">
+              <mat-icon>open_in_new</mat-icon>
+              {{ license.website }}
+            </a>
+          </p>
+          <br />
+        }
+        @if (license.repository) {
+          <p>Repository</p>
+          <p>
+            <a href="{{ license.repository }}" target="_blank" rel="noopner noreferrer">
+              <mat-icon>open_in_new</mat-icon>
+              {{ license.repository }}
+            </a>
+          </p>
+          <br />
+        }
+        <p>{{ license.licenseName }}</p>
+        @defer {
+          <p>{{ license.license }}</p>
+        } @placeholder {
+          <p>Loading...</p>
+        }
+      </mat-expansion-panel>
+    } @placeholder {
+      <p>Loading...</p>
+    }
+  }
+</div>
