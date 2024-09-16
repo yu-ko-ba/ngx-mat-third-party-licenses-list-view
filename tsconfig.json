@@ -11,6 +11,11 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "paths": {
+      "ngx-mat-third-party-licenses-list-view": [
+        "./dist/ngx-mat-third-party-licenses-list-view"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,

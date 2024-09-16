@@ -1,0 +1,24 @@
+{
+  "name": "ngx-mat-third-party-licenses-list-view",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/ngx-mat-third-party-licenses-list-view/"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "typescript": "file:../../node_modules/typescript"
+  },
+  "sideEffects": false
+}

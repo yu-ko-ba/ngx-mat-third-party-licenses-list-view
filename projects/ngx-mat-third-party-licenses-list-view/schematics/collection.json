@@ -1,0 +1,9 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add script to the project that generate third-party-licenses.json.",
+      "factory": "./ng-add/index.js"
+    }
+  }
+}

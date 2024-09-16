@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-mat-third-party-licenses-list-view": {
+      "projectType": "library",
+      "root": "projects/ngx-mat-third-party-licenses-list-view",
+      "sourceRoot": "projects/ngx-mat-third-party-licenses-list-view/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-mat-third-party-licenses-list-view/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-mat-third-party-licenses-list-view/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-mat-third-party-licenses-list-view/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-mat-third-party-licenses-list-view/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }
