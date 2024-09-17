@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
-    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/ngx-mat-third-party-licenses-list-view/"
+    "postbuild": "npx copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ./../../LICENSE ../../dist/ngx-mat-third-party-licenses-list-view/ && npx copyfiles -f ../../LICENSE ../../dist/ngx-mat-third-party-licenses-list-view/"
   },
   "license": "MIT",
   "repository": {
@@ -24,7 +24,6 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
     "typescript": "file:../../node_modules/typescript"
   },
   "sideEffects": false
