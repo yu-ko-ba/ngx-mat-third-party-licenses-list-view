@@ -16,7 +16,7 @@ import _licenses from '../../public/third-party-licenses.json';
   ...
   imports: [..., NgxMatThirdPartyLicensesListViewComponent],
   templateUrl: './licenses.component.html',
-  ...
+  styleUrl: "./licenses.component.css",
 })
 export class LicensesComponent {
   licenses = _licenses as License[];
@@ -30,4 +30,13 @@ licenses.component.html
   <ngx-mat-third-party-licenses-list-view [licenses]="licenses" />
 </main>
 ...
+```
+
+licenses.component.css
+```css
+main {
+  width: calc(100% - 22px);
+  max-width: 600px;
+  margin: 0 auto;
+}
 ```
