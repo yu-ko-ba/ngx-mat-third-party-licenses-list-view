@@ -14,15 +14,19 @@ export function addGenerateScriptForPackageJson(tree: Tree): Tree {
   packageJson.scripts = packageJson.scripts || {};
 
   if (packageJson.scripts['postinstall']) {
-    packageJson.scripts['postinstall'] =
-      `${packageJson.scripts['postinstall']}; ${command}`;
+    if (!packageJson.scripts['postinstall'].includes(command)) {
+      packageJson.scripts['postinstall'] =
+        `${packageJson.scripts['postinstall']}; ${command}`;
+    }
   } else {
     packageJson.scripts['postinstall'] = command;
   }
 
   if (packageJson.scripts['postuninstall']) {
-    packageJson.scripts['postuninstall'] =
-      `${packageJson.scripts['postuninstall']}; ${command}`;
+    if (!packageJson.scripts['postuninstall'].includes(command)) {
+      packageJson.scripts['postuninstall'] =
+        `${packageJson.scripts['postuninstall']}; ${command}`;
+    }
   } else {
     packageJson.scripts['postuninstall'] = command;
   }

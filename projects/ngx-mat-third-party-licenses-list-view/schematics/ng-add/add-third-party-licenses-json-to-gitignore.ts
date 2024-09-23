@@ -11,12 +11,19 @@ export function addThirdPartyLicensesJsonToGitignore(tree: Tree): Tree {
     return tree;
   }
 
-  const gitignore = [
-    tree.read('.gitignore')!.toString(),
-    addString,
-  ].join('\n');
+  const gitignore = tree.read('.gitignore')!.toString();
 
-  tree.overwrite('.gitignore', gitignore);
+  if (gitignore.includes(addString)) {
+    return tree;
+  }
+
+  tree.overwrite(
+    '.gitignore',
+    [
+      gitignore,
+      addString,
+    ].join('\n'),
+  );
 
   return tree;
 }
