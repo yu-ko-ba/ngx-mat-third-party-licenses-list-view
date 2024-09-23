@@ -1,6 +1,6 @@
 {
   "name": "ngx-mat-third-party-licenses-list-view",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
     "postbuild": "npx copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ./../../LICENSE ../../dist/ngx-mat-third-party-licenses-list-view/ && npx copyfiles -f ../../LICENSE ../../dist/ngx-mat-third-party-licenses-list-view/"
