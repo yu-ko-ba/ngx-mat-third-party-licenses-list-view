@@ -12,7 +12,11 @@
         @if (license.website) {
           <p>Website</p>
           <p>
-            <a href="{{ license.website }}" target="_blank" rel="noopner noreferrer">
+            <a
+              href="{{ license.website }}"
+              target="_blank"
+              rel="noopner noreferrer"
+            >
               <mat-icon>open_in_new</mat-icon>
               {{ license.website }}
             </a>
@@ -22,7 +26,11 @@
         @if (license.repository) {
           <p>Repository</p>
           <p>
-            <a href="{{ license.repository }}" target="_blank" rel="noopner noreferrer">
+            <a
+              href="{{ license.repository }}"
+              target="_blank"
+              rel="noopner noreferrer"
+            >
               <mat-icon>open_in_new</mat-icon>
               {{ license.repository }}
             </a>
@@ -31,7 +39,7 @@
         }
         <p>{{ license.licenseName }}</p>
         @defer {
-          <p>{{ license.license }}</p>
+          <pre>{{ license.license }}</pre>
         } @placeholder {
           <p>Loading...</p>
         }

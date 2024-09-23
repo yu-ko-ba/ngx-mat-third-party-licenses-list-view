@@ -2,10 +2,14 @@
   padding-bottom: 10px;
 }
 
-#container>* {
+#container > * {
   width: 100%;
 }
 
 mat-expansion-panel {
   margin-top: 10px;
+}
+
+pre {
+  white-space: pre-wrap;
 }
