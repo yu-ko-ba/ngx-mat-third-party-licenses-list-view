@@ -13,3 +13,13 @@ mat-expansion-panel {
 pre {
   white-space: pre-wrap;
 }
+
+a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 4px;
+}

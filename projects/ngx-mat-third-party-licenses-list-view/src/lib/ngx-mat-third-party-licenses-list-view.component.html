@@ -15,26 +15,25 @@
             <a
               href="{{ license.website }}"
               target="_blank"
-              rel="noopner noreferrer"
+              rel="noopener noreferrer"
             >
               <mat-icon>open_in_new</mat-icon>
-              {{ license.website }}
+              <span>{{ license.website }}</span>
             </a>
           </p>
           <br />
         }
         @if (license.repository) {
           <p>Repository</p>
-          <p>
-            <a
-              href="{{ license.repository }}"
-              target="_blank"
-              rel="noopner noreferrer"
-            >
-              <mat-icon>open_in_new</mat-icon>
-              {{ license.repository }}
-            </a>
-          </p>
+          <a
+            class="icon-text"
+            href="{{ license.repository }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <mat-icon>open_in_new</mat-icon>
+            <span>{{ license.repository }}</span>
+          </a>
           <br />
         }
         <p>{{ license.licenseName }}</p>
