@@ -1,7 +1,7 @@
 {
   "name": "ngx-mat-third-party-licenses-list-view",
   "description": "An Angular Material component library that provides a list view of third-party licenses.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "angular",
     "material",
