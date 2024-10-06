@@ -2,6 +2,11 @@
   "name": "ngx-mat-third-party-licenses-list-view",
   "description": "An Angular Material component library that provides a list view of third-party licenses.",
   "version": "0.0.3",
+  "keywords": [
+    "angular",
+    "material",
+    "license"
+  ],
   "scripts": {
     "build": "ng build ngx-mat-third-party-licenses-list-view && tsc -p tsconfig.schematics.json",
     "postbuild": "npx copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ./../../LICENSE ../../dist/ngx-mat-third-party-licenses-list-view/ && npx copyfiles -f ../../LICENSE ../../README.md ../../dist/ngx-mat-third-party-licenses-list-view/"
