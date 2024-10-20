@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-//import {
-//  NgxMatThirdPartyLicensesListViewComponent,
-//  License,
-//} from 'ngx-mat-third-party-licenses-list-view';
-import {
-  NgxMatThirdPartyLicensesListViewComponent,
-  License,
-} from '../../../ngx-mat-third-party-licenses-list-view/src/public-api';
+import { License, NgxMatThirdPartyLicensesListViewComponent } from '../../../ngx-mat-third-party-licenses-list-view/src/public-api';
 import _licenses from '../../public/third-party-licenses.json';
 
 @Component({
@@ -15,7 +8,7 @@ import _licenses from '../../public/third-party-licenses.json';
   standalone: true,
   imports: [RouterOutlet, NgxMatThirdPartyLicensesListViewComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'example';
