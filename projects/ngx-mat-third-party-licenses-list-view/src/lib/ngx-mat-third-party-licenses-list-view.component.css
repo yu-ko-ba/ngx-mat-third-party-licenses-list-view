@@ -20,6 +20,7 @@ pre {
 }
 
 a {
+  color: #5881C1;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -32,5 +33,4 @@ mat-icon {
 
 span {
   margin-left: 4px;
-  text-decoration: underline;
 }
