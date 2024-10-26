@@ -2,7 +2,7 @@
   @for (license of licenses; track license.name) {
     @defer {
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header matRipple>
           {{ license.name }}
         </mat-expansion-panel-header>
         @if (license.description) {
