@@ -4,11 +4,10 @@ import { License, NgxMatThirdPartyLicensesListViewComponent } from '../../../ngx
 import _licenses from '../../public/third-party-licenses.json';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NgxMatThirdPartyLicensesListViewComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [RouterOutlet, NgxMatThirdPartyLicensesListViewComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'example';
