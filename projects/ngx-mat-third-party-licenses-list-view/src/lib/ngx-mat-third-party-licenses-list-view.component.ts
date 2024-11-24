@@ -6,7 +6,6 @@ import { License } from './model/license';
 
 @Component({
   selector: 'ngx-mat-third-party-licenses-list-view',
-  standalone: true,
   imports: [MatRippleModule, MatExpansionModule, MatIconModule],
   templateUrl: './ngx-mat-third-party-licenses-list-view.component.html',
   styleUrl: './ngx-mat-third-party-licenses-list-view.component.css',
